@@ -7,12 +7,13 @@ import headerStyles from './header.module.scss'
 
 
 const Header = () => {
-    // template literal to use graphql api to pull data and query it
+    // template literal to use graphql api to pull data and inject it to our jsx, this allows for page to be dynamic
     const data = useStaticQuery(graphql`
         query {
             site {
                 siteMetadata {
-                    title
+                    title,
+                    author
                 }
             }
         }
