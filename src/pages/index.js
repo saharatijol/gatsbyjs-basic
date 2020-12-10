@@ -13,7 +13,7 @@ const IndexPage = () => {
         <div>
             <h1>Hello.</h1>
             <h2>This is a test. I should see this</h2>
-            <p>Need a developer? <a href="/contact">Contact Me</a></p>
+            {/*<p>Need a developer? <a href="/contact">Contact Me</a></p>*/}
 
             {/*Gatsby Way of linking*/}
             <p>Need a developer? <Link to="/contact">Contact Me</Link></p>

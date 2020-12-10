@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const AboutPage = () => {
     return (
@@ -13,6 +14,7 @@ const AboutPage = () => {
                 provident quas repellat sequi sunt temporibus ullam voluptates. Blanditiis consequatur iure minus quia quis
                 repellat rerum soluta. Ab aliquam aspernatur beatae dicta in maiores nulla sapiente sequi. Adipisci dolor dolore ea
                 hic libero neque obcaecati quas saepe sed ullam.</p>
+            <p>Here is the best way to <Link to="/contact">contact us</Link></p>
         </div>
     )
 }
