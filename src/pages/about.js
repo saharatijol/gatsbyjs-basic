@@ -3,7 +3,7 @@ import React from 'react'
 const AboutPage = () => {
     return (
         <div>
-            <h1>About US</h1>
+            <h1>About</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab labore laboriosam natus nostrum quos voluptatum.</p>
             <h2>Bio</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cupiditate mollitia quasi quos repellat
