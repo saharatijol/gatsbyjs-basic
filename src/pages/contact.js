@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Footer from '../components/footer'
+
 const ContactPage = () => {
     return (
         <div>
@@ -8,7 +10,8 @@ const ContactPage = () => {
             <p>John Doe</p>
             <p>test@domain.tld</p>
             <p>123-123-1234</p>
-            <p>Follow me on <Link to="https://twitter.com/funnyoneliners?lang=en">twitter</Link></p>
+            <p>Follow me on twitter <Link to="https://twitter.com/funnyoneliners?lang=en">@funnyoneliners</Link></p>
+        <Footer/>
         </div>
     )
 }

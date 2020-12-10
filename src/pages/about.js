@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import Footer from '../components/footer'
+
 
 const AboutPage = () => {
     return (
@@ -15,6 +17,7 @@ const AboutPage = () => {
                 repellat rerum soluta. Ab aliquam aspernatur beatae dicta in maiores nulla sapiente sequi. Adipisci dolor dolore ea
                 hic libero neque obcaecati quas saepe sed ullam.</p>
             <p>Here is the best way to <Link to="/contact">contact us</Link></p>
+            <Footer/>
         </div>
     )
 }

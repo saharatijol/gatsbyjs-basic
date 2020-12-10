@@ -4,6 +4,7 @@ import React from 'react'
 // Link is a react component that does the optimization of page loads.
 // It preloads the page content you are heading to, hence the seamless page load
 import { Link } from 'gatsby'
+import Footer from '../components/footer'
 
 // Notes: In site creation, src/pages directory is where gatsby looks when its figuring out which static pages your site needs
 
@@ -17,6 +18,7 @@ const IndexPage = () => {
 
             {/*Gatsby Way of linking*/}
             <p>Need a developer? <Link to="/contact">Contact Me</Link></p>
+            <Footer/>
         </div>
     )
 }
