@@ -5,6 +5,7 @@ import React from 'react'
 // It preloads the page content you are heading to, hence the seamless page load
 import { Link } from 'gatsby'
 import Footer from '../components/footer'
+import Header from '../components/header'
 
 // Notes: In site creation, src/pages directory is where gatsby looks when its figuring out which static pages your site needs
 
@@ -12,6 +13,7 @@ import Footer from '../components/footer'
 const IndexPage = () => {
     return (
         <div>
+            <Header/>
             <h1>Hello.</h1>
             <h2>This is a test. I should see this</h2>
             {/*<p>Need a developer? <a href="/contact">Contact Me</a></p>*/}
