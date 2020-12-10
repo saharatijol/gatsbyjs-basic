@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby' // allows you to perform a graphql query
 //import './header.module.scss'
 
 // headerStyles becomes an object to apply it directly to the class link
@@ -7,11 +7,22 @@ import headerStyles from './header.module.scss'
 
 
 const Header = () => {
+    // template literal to use graphql api to pull data and query it
+    const data = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `)
+
     return (
         <header className={headerStyles.header}>
             <h1>
             <Link className={headerStyles.title} to="/">
-                Sara T
+                {data.site.siteMetadata.title}
             </Link>
             </h1>
             <nav>
