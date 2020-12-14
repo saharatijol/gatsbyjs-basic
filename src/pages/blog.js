@@ -8,23 +8,27 @@ const BlogPage = () => {
         query {
             allMarkdownRemark {
                 edges {
-                    node{
+                    node {
                         frontmatter {
                             title,
                             date
                             }
-                            html
-                            excerpt
+                            
                             }}}}
     `)
 
     return (
         <Layout>
             <h1>Blog</h1>
-            <p>Posts will show up here.. a lists</p>
             <ol>
-                {data.allMarkdownRemark.edges.node.frontmatter.title}
-                {data.allMarkdownRemark.edges.node.frontmatter.date}
+                {data.allMarkdownRemark.edges.map((edge) => {
+                    return (
+                        <li>
+                            <h2>{edge.node.frontmatter.title}</h2>
+                            <p>{edge.node.frontmatter.date}</p>
+                        </li>
+                    )
+                })}
             </ol>
         </Layout>
     )
